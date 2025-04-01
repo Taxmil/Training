@@ -1,0 +1,8 @@
+<div class="container" *ngIf="anime">
+  <h2>{{ anime.title }}</h2>
+  <img *ngIf="anime?.image" [src]="anime.image" [alt]="anime.title">
+  <p><strong>Genre:</strong> {{ anime.genre }}</p>
+  <p><strong>Rating:</strong> {{ anime.rating }}/10</p>
+  <p>{{ anime.description }}</p>
+  <a routerLink="/" class="btn btn-secondary">Back</a>
+</div>

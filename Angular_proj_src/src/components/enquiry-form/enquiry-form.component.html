@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Anime Enquiry</h2>
+    <form (ngSubmit)="onSubmit()" #enquiryForm="ngForm">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="enquiry.name" name="name" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="enquiry.email" name="email" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" [(ngModel)]="enquiry.message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
